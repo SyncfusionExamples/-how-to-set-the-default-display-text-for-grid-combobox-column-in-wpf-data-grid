@@ -1,9 +1,9 @@
 # How to set the default display text for GridComboBox column in WPF DataGrid (SfDataGrid)?
 
-How to set the default display text for GridComboBox column in WPF DataGrid (SfDataGrid)?
+This sample show cases how to set the default display text for GridComboBox column in [WPF DataGrid](https://www.syncfusion.com/wpf-ui-controls/datagrid) (SfDataGrid)?
 
 # About the sample
-In SfDataGrid, GridComboBoxColumn does not have direct support to display default text on it when there is no selected Item. You can change default text using ComboBoxValueConverter and DisplayBinding property of the column.
+The [GridComboBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridComboBoxColumn.html) does not have direct support to display default text on it when there is no selected Item in [WPF DataGrid](https://www.syncfusion.com/wpf-ui-controls/datagrid) (SfDataGrid). You can change the default text using ComboBoxValueConverter and DisplayBinding property of the column.
 
 ```Xaml
 <Window.Resources>
