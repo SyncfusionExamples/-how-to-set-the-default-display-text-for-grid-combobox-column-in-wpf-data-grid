@@ -41,5 +41,7 @@ public class ComboBoxValueConverter : IValueConverter
 }
 ```
 
+KB article - [How to set the default display text for GridComboBox column in WPF DataGrid (SfDataGrid)?](https://www.syncfusion.com/kb/11999/how-to-set-the-default-display-text-for-gridcombobox-column-in-wpf-datagrid-sfdatagrid)
+
 ## Requirements to run the demo
  Visual Studio 2015 and above versions
