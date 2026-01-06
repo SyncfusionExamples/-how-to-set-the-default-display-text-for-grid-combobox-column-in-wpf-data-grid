@@ -1,11 +1,11 @@
-# How to set the default display text for GridComboBox column in WPF DataGrid (SfDataGrid)?
+# How to Set the Default Display Text for GridComboBoxColumn in WPF DataGrid?
 
-This sample show cases how to set the default display text for GridComboBox column in [WPF DataGrid](https://www.syncfusion.com/wpf-ui-controls/datagrid) (SfDataGrid)?
+This sample show cases how to set the default display text for [GridComboBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridComboBoxColumn.html) in [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid).
 
-# About the sample
-The [GridComboBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridComboBoxColumn.html) does not have direct support to display default text on it when there is no selected Item in [WPF DataGrid](https://www.syncfusion.com/wpf-ui-controls/datagrid) (SfDataGrid). You can change the default text using ComboBoxValueConverter and DisplayBinding property of the column.
+The `GridComboBoxColumn` does not have direct support to display default text on it when there is no selected Item in `DataGrid`. You can change the default text using ComboBoxValueConverter and DisplayBinding property of the column.
 
-```Xaml
+#### XAML
+``` xml
 <Window.Resources>
     <local:ComboBoxValueConverter x:Key="comboBoxValueConverter"/>
 </Window.Resources>
@@ -24,7 +24,8 @@ The [GridComboBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.G
     </syncfusion:SfDataGrid.Columns>
 </syncfusion:SfDataGrid>
 ```
-```c#
+#### C#
+```csharp
 public class ComboBoxValueConverter : IValueConverter
 {
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
@@ -41,7 +42,7 @@ public class ComboBoxValueConverter : IValueConverter
 }
 ```
 
-KB article - [How to set the default display text for GridComboBox column in WPF DataGrid (SfDataGrid)?](https://www.syncfusion.com/kb/11999/how-to-set-the-default-display-text-for-gridcombobox-column-in-wpf-datagrid-sfdatagrid)
+![Showing GridComboBoxColumn with default display text](GridComboBoxColumnWithDefaultText.png)
 
 ## Requirements to run the demo
  Visual Studio 2015 and above versions
